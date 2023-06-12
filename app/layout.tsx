@@ -1,4 +1,5 @@
 import ClientOnly from "./components/ClientOnly";
+import RegisterModal from "./components/Modals/RegisterModal";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ClientOnly>
+          <RegisterModal />
           <Navbar />
         </ClientOnly>
         {children}
