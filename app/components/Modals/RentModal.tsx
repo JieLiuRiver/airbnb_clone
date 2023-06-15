@@ -14,12 +14,10 @@ import { useMemo, useState } from "react";
 import useRentModal from '@/app/hooks/useRentModal';
 
 import Modal from "./index";
-// import Counter from "../inputs/Counter";
 import CategoryInput from '../Input/CategoryInput';
-// import CountrySelect from "../inputs/CountrySelect";
 import { categories } from '../Navbar/Categories';
-// import ImageUpload from '../inputs/ImageUpload';
-// import Input from '../inputs/Input';
+import ImageUpload from '../Input/ImageUpload';
+// import Input from '../Input/Input';
 import Heading from '../Heading';
 import CountrySelect from '../Input/CountrySelect';
 import Counter from '../Input/Counter';
@@ -215,10 +213,10 @@ const RentModal = () => {
           title="Add a photo of your place"
           subtitle="Show guests what your place looks like!"
         />
-        {/* <ImageUpload
+        <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
           value={imageSrc}
-        /> */}
+        />
       </div>
     )
   }
