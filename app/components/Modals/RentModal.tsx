@@ -17,7 +17,7 @@ import Modal from "./index";
 import CategoryInput from '../Input/CategoryInput';
 import { categories } from '../Navbar/Categories';
 import ImageUpload from '../Input/ImageUpload';
-// import Input from '../Input/Input';
+import Input from '../Input/index';
 import Heading from '../Heading';
 import CountrySelect from '../Input/CountrySelect';
 import Counter from '../Input/Counter';
@@ -228,7 +228,7 @@ const RentModal = () => {
           title="How would you describe your place?"
           subtitle="Short and sweet works best!"
         />
-        {/* <Input
+        <Input
           id="title"
           label="Title"
           disabled={isLoading}
@@ -244,7 +244,7 @@ const RentModal = () => {
           register={register}
           errors={errors}
           required
-        /> */}
+        />
       </div>
     )
   }
@@ -256,7 +256,7 @@ const RentModal = () => {
           title="Now, set your price"
           subtitle="How much do you charge per night?"
         />
-        {/* <Input
+        <Input
           id="price"
           label="Price"
           formatPrice 
@@ -265,7 +265,7 @@ const RentModal = () => {
           register={register}
           errors={errors}
           required
-        /> */}
+        />
       </div>
     )
   }
