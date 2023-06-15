@@ -22,6 +22,7 @@ import { categories } from '../Navbar/Categories';
 // import Input from '../inputs/Input';
 import Heading from '../Heading';
 import CountrySelect from '../Input/CountrySelect';
+import Counter from '../Input/Counter';
 
 enum STEPS {
   CATEGORY = 0,
@@ -183,14 +184,14 @@ const RentModal = () => {
           title="Share some basics about your place"
           subtitle="What amenitis do you have?"
         />
-        {/* <Counter 
+        <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}
           title="Guests" 
           subtitle="How many guests do you allow?"
         />
         <hr />
-        <Counter 
+        <Counter
           onChange={(value) => setCustomValue('roomCount', value)}
           value={roomCount}
           title="Rooms" 
@@ -202,7 +203,7 @@ const RentModal = () => {
           value={bathroomCount}
           title="Bathrooms" 
           subtitle="How many bathrooms do you have?"
-        /> */}
+        />
       </div>
     )
   }
