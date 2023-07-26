@@ -1,3 +1,10 @@
+### env
+```
+GITHUB_ID=
+GITHUB_SECRET=
 
-- use google's free cloudinary
-  - config `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` variable to `.env` file
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+NEXTAUTH_SECRET=
+DATABASE_URL=
+```

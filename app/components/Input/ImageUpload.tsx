@@ -25,15 +25,14 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
   }, [onChange]);
 
   return (
-    <CldUploadWidget 
-      onUpload={handleUpload} 
+    <CldUploadWidget
+      onUpload={handleUpload}
       uploadPreset={uploadPreset}
       options={{
         maxFiles: 1
       }}
     >
       {({ open }) => {
-        console.log('xxxx open', open)
         return (
           <div
             onClick={() => open?.()}
@@ -64,16 +63,16 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
               <div className="
               absolute inset-0 w-full h-full">
                 <Image
-                  fill 
-                  style={{ objectFit: 'cover' }} 
-                  src={value} 
-                  alt="House" 
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  src={value}
+                  alt="House"
                 />
               </div>
             )}
           </div>
-        ) 
-    }}
+        )
+      }}
     </CldUploadWidget>
   );
 }
