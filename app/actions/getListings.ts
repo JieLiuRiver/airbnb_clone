@@ -84,8 +84,6 @@ export default async function getListings(
         createdAt: 'desc'
       }
     });
-    console.log('query', query, 'listings', listings)
-
     const safeListings = listings.map((listing) => ({
       ...listing,
       createdAt: listing.createdAt.toISOString(),
