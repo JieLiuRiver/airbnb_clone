@@ -121,3 +121,13 @@ In this project, we use `Tailwind CSS` to implement responsive design, which all
 `Tailwind CSS` also provides a set of utility functions that can help us quickly implement common responsive effects. For example, we can use the `grid` function with the `grid-cols-1`, `sm:grid-cols-2`, `md:grid-cols-3`, `lg:grid-cols-4`, `xl:grid-cols-5`, and `2xl:grid-cols-6` arguments to specify the number of columns in a grid layout for different screen sizes, and use the `hidden` and `sm:block` functions to show or hide elements on different screen sizes.
 
 By using `Tailwind CSS`, we can quickly implement responsive design, and customize the styles and breakpoints by modifying the configuration file to meet our own needs.
+
+
+## Authentication Middleware
+
+This project uses the `next-auth/middleware` module to protect certain routes that require authentication. The middleware checks whether the user is authenticated before allowing access to the protected routes. If the user is not authenticated, they will be redirected to the login page.
+
+The middleware is configured with a `matcher` object that specifies the protected routes. In this project, the protected routes include `/trips`, `/reservations`, `/properties`, and `/favorites`, which are all related to user data and require authentication to access.
+
+By using this middleware, we can ensure that only authenticated users can access sensitive user data, and prevent unauthorized access to the protected routes.
+
