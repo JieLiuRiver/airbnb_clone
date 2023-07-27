@@ -18,6 +18,7 @@ Note: Learn from [Youtube Video Course](https://www.youtube.com/watch?v=c_-b_isI
     GOOGLE_CLIENT_SECRET=your-google-client-secret
     NEXTAUTH_SECRET=your-nextauth-secret
     DATABASE_URL=your-database-url
+    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your-cloudinary-name
     ```
 5. Run the `npm run dev` command to start the development server.
 6. Open http://localhost:3000 ↗ in your browser to access the project website.
